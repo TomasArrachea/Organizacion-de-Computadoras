@@ -48,7 +48,7 @@ int main(int argc, char* argv[]) {
     int index = optind;
 
     if (argc < 4) {
-		perror("Error: los argumentos son inválidos.");
+		fprintf(stderr, "Error: los argumentos son inválidos.");
 		return 1;
     }
 
@@ -61,7 +61,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	if (regla > 255 || regla <= 0 || n <= 0) {
-		perror("Error: los argumentos son inválidos.");
+		fprintf(stderr, "Error: los argumentos son inválidos.");
 		fclose(salida);
 		return 1;
 	}
@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
 FILE* inicializar_pbm(char* nombre, int n) {
 	FILE* file = fopen(nombre, "w");
 	if (!file){
-		perror("Error al crear el archivo de salida.");
+		fprintf(stderr, "Error al crear el archivo de salida.");
 		return 0;
     }
 
@@ -129,9 +129,9 @@ void imprimir_version(){
 }
 
 int cargar_inicio(char* nombre_inicial, unsigned char** estados, int n) {
-	FILE* archivo_inicial = fopen("inicial", "r");
+	FILE* archivo_inicial = fopen(nombre_inicial, "r");
 	if (!archivo_inicial){
-		perror("Error al abrir el archivo inicial.");
+		fprintf(stderr, "Error al abrir el archivo inicial.");
 		return 2;
 	}
 
@@ -140,19 +140,19 @@ int cargar_inicio(char* nombre_inicial, unsigned char** estados, int n) {
 		numero = getc(archivo_inicial) - '0';
 		if (numero == EOF){
 			fclose(archivo_inicial);
-			perror("Error: el archivo inicial tiene celdas de menos.");
+			fprintf(stderr, "Error: el archivo inicial tiene celdas de menos.");
 			return -1;
 
 		} else if (numero != 0 && numero != 1){
 			fclose(archivo_inicial);
-			perror("Error: el archivo inicial no cumple con el formato.");
+			fprintf(stderr, "Error: el archivo inicial no cumple con el formato.");
 			return -1;
 		}
 		estados[0][j] = numero;
 	}
 
 	if (fscanf(archivo_inicial, "%s", &numero) != EOF){
-		perror("Error: el archivo inicial tiene celdas de sobra.");
+		fprintf(stderr, "Error: el archivo inicial tiene celdas de sobra.");
 		return 1;
 	}
 
