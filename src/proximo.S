@@ -54,7 +54,7 @@ lim_inferior:
 	#digito3 = a[i][j+1]
 	lb $t3, 1($a0)
 	addu $a0, $a0, $t4
-	lb $t1, ($a0)
+	lb $t1, -1($a0)
 	j exit
 lim_superior:
 	#digito1 = a[i][j-1]
