@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <ctype.h>
 
-const char* VERSION_ACTUAL = "1.2";
+const char* VERSION_ACTUAL = "1.3";
 const int MULTIPLICADOR_PIXELS = 4;
 
 extern unsigned char proximo(unsigned char* a, unsigned int i, unsigned int j, unsigned char regla, unsigned int n);
