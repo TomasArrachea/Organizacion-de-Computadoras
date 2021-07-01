@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <ctype.h>
 #include <getopt.h>
+#include "cache.h"
 
 const char* VERSION_ACTUAL = "1.0";
 
@@ -11,6 +12,7 @@ void imprimir_version();
 void leer_archivo(char* nombre);
 void ejecutar_instrucciones(char* archivo_instrucciones, char* archivo_salida);
 void parse_arguments(int argc, char** argv, int* ways, int* cache_size, int* block_size, char* archivo_salida, char* archivo_instrucciones);
+
 
 int main(int argc, char* argv[]) {
 	FILE* salida = NULL;
