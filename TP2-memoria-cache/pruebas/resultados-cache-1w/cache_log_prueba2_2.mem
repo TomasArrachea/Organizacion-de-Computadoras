@@ -1,0 +1,13 @@
+Write value 123 in address 0: hit = 0
+Write value 233 in address 1: hit = 0
+Write value 34 in address 2: hit = 0
+Read value 123 from address 0: hit = 0
+Read value 233 from address 1: hit = 1
+Read value 34 from address 2: hit = 1
+Write value 1 in address 0: hit = 1
+Write value 2 in address 1: hit = 1
+Write value 3 in address 2: hit = 1
+Read value 1 from address 0: hit = 1
+Read value 2 from address 1: hit = 1
+Read value 3 from address 2: hit = 1
+Miss rate: 33%.

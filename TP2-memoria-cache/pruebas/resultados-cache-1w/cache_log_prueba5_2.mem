@@ -1,0 +1,7 @@
+SEGFAULT trying to Read address 131072.
+Read value 0 from address 4096: hit = 0
+Read value 0 from address 8192: hit = 0
+Read value 0 from address 4096: hit = 1
+Read value 0 from address 0: hit = 0
+Read value 0 from address 4096: hit = 1
+Miss rate: 60%.

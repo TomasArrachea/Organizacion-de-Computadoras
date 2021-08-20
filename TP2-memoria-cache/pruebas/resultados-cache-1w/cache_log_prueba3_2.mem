@@ -1,0 +1,17 @@
+Write value 1 in address 128: hit = 0
+Write value 2 in address 129: hit = 0
+Write value 3 in address 130: hit = 0
+Write value 4 in address 131: hit = 0
+Read value 1 from address 128: hit = 0
+Read value 2 from address 129: hit = 1
+Read value 3 from address 130: hit = 1
+Read value 4 from address 131: hit = 1
+Read value 0 from address 1152: hit = 0
+Read value 0 from address 2176: hit = 0
+Read value 0 from address 3200: hit = 0
+Read value 0 from address 4224: hit = 0
+Read value 1 from address 128: hit = 1
+Read value 2 from address 129: hit = 1
+Read value 3 from address 130: hit = 1
+Read value 4 from address 131: hit = 1
+Miss rate: 56%.

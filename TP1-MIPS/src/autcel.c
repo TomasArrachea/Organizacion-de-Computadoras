@@ -105,7 +105,7 @@ void generar_automata(FILE* salida, char* nombre_inicial, char regla, int n) {
 		free(estados[j]);			
 }
 
-void imprimir_ayuda(){
+void imprimir_ayuda() {
 	printf(
 	"	Uso:\n"
 	"		autcel -h\n"
@@ -121,10 +121,11 @@ void imprimir_ayuda(){
 	"	-> autcel 30 80 inicial -o evolucion\n"
 	"		Calcula la evolución del autómata 'Regla 30', en un mundo unidimensional de 80 celdas, por 80 iteraciones.\n"
 	"		El archivo de salida se llamará evolucion.pbm.\n"
-	"		Si no se da un prefijo para los archivos de salida, el prefijo será el nombre del archivo de entrada\n");
+	"		Si no se da un prefijo para los archivos de salida, el prefijo será el nombre del archivo de entrada\n"
+	);
 }
 
-void imprimir_version(){
+void imprimir_version() {
 	printf("Versión actual: %s\n", VERSION_ACTUAL);
 }
 

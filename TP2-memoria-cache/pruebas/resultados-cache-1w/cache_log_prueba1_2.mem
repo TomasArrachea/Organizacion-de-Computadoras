@@ -1,0 +1,17 @@
+Write value 255 in address 0: hit = 0
+Read value 255 from address 0: hit = 0
+Write value 254 in address 16384: hit = 0
+Read value 254 from address 16384: hit = 0
+Write value 248 in address 32768: hit = 0
+Read value 248 from address 32768: hit = 0
+Write value 96 in address 49152: hit = 0
+Read value 96 from address 49152: hit = 0
+Read value 255 from address 0: hit = 0
+Write value 1 in address 0: hit = 1
+Read value 254 from address 16384: hit = 0
+Write value 163 in address 16384: hit = 0
+Read value 248 from address 32768: hit = 0
+Write value 32 in address 32768: hit = 0
+Read value 96 from address 49152: hit = 0
+Write value 49 in address 49152: hit = 0
+Miss rate: 93%.
